@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script !src="">
+    // s = 1*2 + 2*3 + 3*4 + ... + (100*n)*(100*n+1);
+    // => Công thức tổng quát: i*(i+1);
+
+    // nhập số n
+    let n = +prompt("Mời bạn nhập: ");
+    let total = 0;
+    // tính toán
+    for(let i = 1; i<=100*n; i++){
+        total += i*(i+1);
+    }
+
+    // hiển thị
+    alert(total);
+</script>
+</body>
+</html>

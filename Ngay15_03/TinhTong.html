@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // S = 1/2 + 2/3 + 3/4 + ... + 2n/(2n+1);
+    // => công thức tổng quát là: tử / (tử + 1);
+
+    // nhập thông tin từ bàn phím
+    let soNguyen = +prompt("Mời bạn nhập số nguyên n: ");
+    let total = 0; // lưu kết quả của bài toán
+    // tính toán
+    for(let i = 1; i<= soNguyen; i++){
+        console.log(i/(i+1));
+        total += i/(i+1); // tính biểu thức
+    }
+
+    // hiển thị kết quả:
+    document.write("Kết quả của bài toán là " + total);
+</script>
+</body>
+</html>
