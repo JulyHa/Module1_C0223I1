@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="bangCuuChuong"></div>
+<script>
+    let str="<table border='1'>"
+    for(let i = 2; i < 10; i++){
+        let col = "<tr>"
+        for(let j = 1; j <= 10; j++){
+            col+= "<td>" +i + "x" + j + "=" + (i*j) + "</td>";
+        }
+        col+= "</tr>"
+        str+= col;
+    }
+    document.getElementById("bangCuuChuong").innerHTML = str;
+</script>
 </body>
 </html>
