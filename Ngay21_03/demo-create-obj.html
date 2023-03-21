@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script !src="">
+    class Student{
+        name;
+        age;
+        // constructor() {
+        //     this.name = "Ngũ"
+        //     this.age = "21"
+        // }
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        getName(){
+            return this.name;
+        }
+        getAge(){
+            // return this.age;
+            console.log("This is obj: " + this.age );
+        }
+        say(){
+            alert("Gâu gâu!")
+        }
+        age1(){
+            alert("Meo Meo!")
+        }
+
+
+    }
+    function getAge(){
+        console.log("Ahihi");
+    }
+
+    // let name = prompt("Mời bạn nhập tên: ");
+    // let age = prompt("Mời bạn nhập tuổi: ");
+    // let student = new Student(name, age);
+    let student2 = new Student("Ngũ", "22");
+    // console.log(student.getAge() + " - " + student.getName());
+    // console.log(student2.getAge() + " - " + student2.getName());
+    alert(student2.age );
+    student2.age1();
+
+
+</script>
+</body>
+</html>
